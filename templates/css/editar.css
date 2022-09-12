@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(47, 48, 48);
+}
+
+.container{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+select{
+    height: 25px;
+    width: 90px;
+}
+
+input{
+    width: 190px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#but01{
+    background-color: rgb(3, 67, 128);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    width: 200px;
+    height: 80px;
+}
+
+#but01:hover{
+    background-color: rgb(3, 67, 128);
+}

@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="/css/editar.css">
+</head>
+<div class="container">
+    <h1>PAGINA EDIÇÃO</h1>
+    <div class="principal">
+            <form action="/editar" method="post">
+                <select name="editarID" id="">
+                    {{#each insert}}
+                    <option  value={{this.id}}>{{this.nome}}</option>
+                    {{/each}}
+                </select>
+                <select id="">
+                    {{#each insert}}
+                    <option  name='editarLIGA'value={{this.liga}}>{{this.liga}}</option>
+                    {{/each}}
+                </select>
+                <div>
+                    <input type="number" name="newPONTOS" placeholder="NEW PONTOS">
+                </div>
+                <div>
+                    <input type="number" name="newPOS" placeholder="NEW POSIÇÃO">
+                    <input type="hidden" name='id'value="{{this.id}}">
+                </div>
+                <input type='submit' id="but01">
+        </form>
+    </div>   
+</div>

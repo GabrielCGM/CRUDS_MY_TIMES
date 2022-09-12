@@ -1,0 +1,23 @@
+<head>
+    <link rel="stylesheet" href="/css/excluir.css">
+</head>
+
+<div class="container">
+    <h1>EXCLUIR TIME</h1> 
+    <div class="principal">
+        <form action="/excluir" method="post">
+            <select name="delNOME" id="">
+                {{#each insert}}
+                <option value="{{this.nome}}">{{this.nome}}</option>
+                {{/each}}
+            </select>
+            <select name="delLIGA" id="">
+                {{#each insert}}
+                <option value="{{this.liga}}">{{this.liga}}</option>
+                {{/each}}
+            </select>
+                <input type="submit" value="EXCLUIR" id="but01">
+        </form>
+    </div>
+</div>
+

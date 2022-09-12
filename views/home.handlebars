@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<div class="titulo">
+    <h1>MEUS TIMES FAVORITOS</h1>
+<div>
+    
+<div class="principal">
+    <div>
+        <form action="/" method="post" class="formulario">
+            <div>
+                <input type="text" name="inputNOME" placeholder="NOME DO TIME" class='input'>
+            </div>
+            <div>
+                <input type="text" name="inputLIGA" placeholder="NOME DA LIGA" class='input'>
+            </div>
+            <div>
+                <input type="text" name="inputPONTOS" placeholder="PONTOS NA LIGA" class='input'>
+            </div>
+            <div>
+                <input type="text" name="inputPOS" placeholder="POSIÇÃO NA LIGA"  class='input'>
+            </div>
+            <div>
+                <input type="submit" value="ADICIONAR" id="but01">
+            </div>
+        </form>
+    </div>
+    <div class="principal2">
+        <table>
+        <tr>
+            <th>NOME</th>
+            <th>LIGA</th>
+            <th>PONTOS</th>
+            <th>POSIÇÃO</th>
+            <th>EDITAR</th>
+            <th>EXCLUIR</th>
+        </tr>
+        {{#each insert}}
+            <tr>
+            <td>{{this.nome}}</td> 
+            <td>{{this.liga}}</td>
+            <td>{{this.pontos}}</td>
+            <td id="pos">{{this.pos}}°</td>
+            <td id="editar"><a href="http://127.0.0.1:8000/editar">EDITAR</a></td>
+            <td id="excluir"><a href="http://127.0.0.1:8000/excluir">EXCLUIR</a></td>
+
+        </tr>
+        {{/each}}  
+        
+        </table>
+    </div>
+</div>

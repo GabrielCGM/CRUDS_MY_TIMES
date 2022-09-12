@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(47, 48, 48);
+}
+
+h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.principal{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 70px
+}
+.principal2{
+    background-color: black;
+}
+
+
+
+table{
+    background-color: rgb(209, 209, 209);
+    font-size: 20px;
+    border: 4px solid black;
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+table th{
+    background-color: rgb(252, 252, 252);
+    border-left: 2px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+table td{
+    font-weight: bold;
+    width: 150px;
+    margin: 0;
+    
+}
+
+#pos{
+    background-color: rgb(112, 240, 112);
+    
+}
+
+#editar{
+    background-color: rgb(6, 120, 124);
+}
+
+#excluir{
+    background-color: rgb(121, 7, 7);
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#editar:hover{
+    background-color:rgb(13, 218, 218);
+}
+
+#excluir:hover{
+    background-color: rgb(233, 33, 33);
+}
+
+.formulario{
+    
+    background-color: rgb(88, 88, 88);
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    border-radius: 10px;
+}
+
+.input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(80, 80, 80);
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: white;
+    font: 20px;
+}
+.input::placeholder{
+    color: wheat;
+}
+.input:focus{
+    background-color: rgb(126, 125, 125);
+    outline: 0;
+}
+
+#but01{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(71, 134, 8);
+    width: 200px;
+    height: 55px;
+    color: black;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#but01:hover{
+    background-color: rgb(128, 255, 0);
+}
